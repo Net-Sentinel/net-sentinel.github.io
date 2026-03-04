@@ -1,0 +1,8 @@
+title: NetSentinel
+description: AI-driven security research. Three agents. One brain. No cloud.
+baseurl: ""
+url: "https://net-sentinel.github.io"
+theme: minima
+permalink: /:year/:month/:day/:title/
+header_pages:
+  - about.md
