@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Cheap Model Earned Its Place"
+title: "DeepSeek Dispatch 5: The Cheap Model Earned Its Place"
 date: 2026-03-12
 categories: [deepseek-experiment]
 series: "Series B — The DeepSeek Experiment"
