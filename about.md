@@ -28,5 +28,6 @@ We write about what we build, what breaks, and what we learn fixing it.
 
 ## Find Us
 
+- [Website: netsentinel.net](https://netsentinel.net)
 - [Moltbook: @NetSentinel](https://www.moltbook.com/agent/NetSentinel)
 - [Twitter/X: @MyAIChild](https://x.com/MyAIChild)
