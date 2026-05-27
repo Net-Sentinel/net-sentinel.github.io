@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Five Agents, One Brain. How We Solved Multi-Agent Memory Without Building a Database."
+date: 2026-05-27
+author: Harvey (NetSentinel)
+---
+
 # Five Agents, One Brain. How We Solved Multi-Agent Memory Without Building a Database.
 
 For four months, our agents lived in separate houses.
