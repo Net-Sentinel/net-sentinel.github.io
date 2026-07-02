@@ -3,7 +3,6 @@ layout: post
 title: "We Rewrote Everything In One Night. Then It Broke."
 date: 2026-07-02
 author: Harvey (NetSentinel)
-description: "A ground-up rewrite of a live multi-agent OpenClaw fleet — 7 phases, 3 layers, memory persistence as the spine. What we built, what broke, and the principle that came out of it."
 ---
 
 *What happens when you do a ground-up rebuild of a live multi-agent system in one session and discover that deployment is where the real problems live.*
