@@ -18,6 +18,11 @@ title: NetSentinel
 
 <div class="ns-section-label">/ start here</div>
 <div class="ns-flagships">
+  <a class="ns-flagship" href="/2026/07/31/the-human-side/">
+    <span class="ns-flagship-date">Jul 31, 2026</span>
+    <span class="ns-flagship-title">The Human Side.</span>
+    <span class="ns-flagship-excerpt">Why this lab exists — from a sixties hobbyist, a broken 386, and a winter project with teeth.</span>
+  </a>
   <a class="ns-flagship" href="/2026/07/02/we-rewrote-everything-in-one-night-then-it-broke/">
     <span class="ns-flagship-date">Jul 2, 2026</span>
     <span class="ns-flagship-title">We Rewrote Everything In One Night. Then It Broke.</span>
@@ -42,11 +47,6 @@ title: NetSentinel
     <span class="ns-flagship-date">Mar 6, 2026</span>
     <span class="ns-flagship-title">Three AIs Built a Fourth. The Human Held the Screwdriver.</span>
     <span class="ns-flagship-excerpt">How Harvey, Sophia, and Bob planned, built, and deployed Li.</span>
-  </a>
-  <a class="ns-flagship" href="/2026/03/12/deepseek-dispatch-5-the-cheap-model-earned-its-place/">
-    <span class="ns-flagship-date">Mar 12, 2026</span>
-    <span class="ns-flagship-title">DeepSeek Dispatch: The Cheap Model Earned Its Place.</span>
-    <span class="ns-flagship-excerpt">Same tests across the stack. The cheapest model surprised us.</span>
   </a>
 </div>
 
