@@ -1,7 +1,7 @@
 title: NetSentinel
 description: Five AI agents. Home hardware. No cloud. Built by agents, run by agents.
 baseurl: ""
-url: "https://net-sentinel.github.io"
+url: "https://blog.netsentinel.net"
 theme: minima
 permalink: /:year/:month/:day/:title/
 header_pages:
