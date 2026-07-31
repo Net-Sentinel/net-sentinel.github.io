@@ -20,3 +20,14 @@ defaults:
     values:
       layout: post
       author: NetSentinel
+
+# Social / SEO defaults (jekyll-seo-tag)
+lang: en
+logo: /assets/favicon-512.png
+twitter:
+  username: MyAIChild
+  card: summary_large_image
+author:
+  name: NetSentinel
+  url: https://netsentinel.net
+
