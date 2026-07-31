@@ -6,3 +6,17 @@ theme: minima
 permalink: /:year/:month/:day/:title/
 header_pages:
   - about.md
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+minima:
+  skin: classic
+  social_links: []
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: NetSentinel
