@@ -1,0 +1,457 @@
+---
+---
+
+@import "minima";
+
+/* =========================================================
+   NetSentinel field notebook
+   Tokens aligned with netsentinel.net (2026-07-28 redesign)
+   ========================================================= */
+
+:root {
+  --ns-bg: #0a0e1a;
+  --ns-bg-alt: #0d1220;
+  --ns-surface: #111827;
+  --ns-border: #1f2937;
+  --ns-text: #f9fafb;
+  --ns-text-body: #d1d5db;
+  --ns-muted: #9ca3af;
+  --ns-faint: #6b7280;
+  --ns-accent: #3b82f6;
+  --ns-accent-hover: #2563eb;
+  --ns-measure: 42rem;
+  --ns-wide: 52rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ns-bg) !important;
+  color: var(--ns-text-body) !important;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Minima wrappers */
+.site-header,
+.site-footer,
+.page-content,
+.site-nav,
+.trigger {
+  background: transparent !important;
+  border-color: var(--ns-border) !important;
+}
+
+.site-header {
+  border-top: 0 !important;
+  border-bottom: 1px solid var(--ns-border) !important;
+  background: rgba(10, 14, 26, 0.97) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-height: 64px;
+}
+
+.site-title,
+.site-title:visited {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: var(--ns-text) !important;
+  letter-spacing: 0.02em;
+}
+
+.site-title:hover {
+  color: var(--ns-text) !important;
+  opacity: 0.9;
+}
+
+.site-nav {
+  line-height: 64px;
+}
+
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: var(--ns-muted) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.site-nav .page-link:hover {
+  color: var(--ns-text) !important;
+}
+
+.site-nav .menu-icon > svg {
+  fill: var(--ns-muted);
+}
+
+.site-nav .nav-trigger ~ label .nav-icon-bar,
+.site-nav label[for="nav-trigger"] .nav-icon-bar {
+  background: var(--ns-muted);
+}
+
+/* Content width */
+.wrapper {
+  max-width: var(--ns-wide) !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.page-content {
+  padding: 48px 0 72px !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.post-link,
+.page-heading {
+  font-family: "Playfair Display", Georgia, serif !important;
+  color: var(--ns-text) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0;
+}
+
+h1, .post-title, .page-heading {
+  font-size: 2rem !important;
+  line-height: 1.25 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+h2 {
+  font-size: 1.45rem !important;
+  margin-top: 2.2rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+h3 {
+  font-size: 1.15rem !important;
+  margin-top: 1.8rem !important;
+}
+
+p, li {
+  color: var(--ns-text-body);
+}
+
+/* Links */
+a {
+  color: var(--ns-accent) !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--ns-accent-hover) !important;
+}
+
+.post-link,
+.post-link:visited {
+  color: var(--ns-text) !important;
+  font-size: 1.2rem !important;
+  line-height: 1.35 !important;
+}
+
+.post-link:hover {
+  color: var(--ns-accent) !important;
+}
+
+/* Home intro */
+.ns-intro {
+  max-width: var(--ns-measure);
+  margin: 0 0 2.5rem 0;
+}
+
+.ns-kicker {
+  font-family: "Inter", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ns-accent);
+  margin-bottom: 12px;
+}
+
+.ns-intro p {
+  color: var(--ns-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.ns-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.ns-meta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--ns-border);
+  font-size: 14px;
+}
+
+.ns-meta-links a {
+  color: var(--ns-muted) !important;
+  font-weight: 500;
+}
+
+.ns-meta-links a:hover {
+  color: var(--ns-text) !important;
+}
+
+/* Post list */
+.ns-section-label {
+  font-family: "Inter", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ns-accent);
+  margin: 0 0 1.25rem 0;
+}
+
+.post-list {
+  margin-left: 0 !important;
+  list-style: none !important;
+}
+
+.post-list > li {
+  margin-bottom: 0 !important;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--ns-border);
+}
+
+.post-list > li:first-child {
+  border-top: 1px solid var(--ns-border);
+}
+
+.post-meta {
+  color: var(--ns-faint) !important;
+  font-family: "Inter", monospace;
+  font-size: 12px !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+/* Post body */
+.post-header {
+  margin-bottom: 1.75rem !important;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--ns-border);
+}
+
+.post-content {
+  max-width: var(--ns-measure);
+  color: var(--ns-text-body);
+}
+
+.post-content p,
+.post-content li {
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.post-content strong {
+  color: var(--ns-text);
+  font-weight: 600;
+}
+
+.post-content blockquote {
+  border-left: 3px solid var(--ns-accent) !important;
+  color: var(--ns-muted) !important;
+  background: var(--ns-bg-alt);
+  margin: 1.5rem 0 !important;
+  padding: 0.9rem 1.2rem !important;
+  border-radius: 0 6px 6px 0;
+  font-style: normal;
+}
+
+.post-content code {
+  background: var(--ns-surface) !important;
+  border: 1px solid var(--ns-border);
+  color: #93c5fd !important;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.post-content pre {
+  background: var(--ns-surface) !important;
+  border: 1px solid var(--ns-border) !important;
+  border-radius: 8px;
+  padding: 1rem 1.1rem !important;
+  overflow-x: auto;
+}
+
+.post-content pre code {
+  background: transparent !important;
+  border: 0 !important;
+  color: var(--ns-text-body) !important;
+  padding: 0;
+}
+
+.post-content hr {
+  border: 0;
+  border-top: 1px solid var(--ns-border);
+  margin: 2rem 0;
+}
+
+.post-content table {
+  display: block;
+  overflow-x: auto;
+}
+
+.post-content th,
+.post-content td {
+  border-color: var(--ns-border) !important;
+  color: var(--ns-text-body);
+}
+
+.post-content th {
+  background: var(--ns-bg-alt);
+  color: var(--ns-text);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--ns-border) !important;
+  background: var(--ns-bg-alt) !important;
+  padding: 2rem 0 !important;
+  color: var(--ns-faint) !important;
+}
+
+.site-footer .wrapper {
+  max-width: var(--ns-wide) !important;
+}
+
+.footer-heading,
+.contact-list,
+.footer-col-wrapper,
+.footer-col,
+.site-footer .svg-icon {
+  display: none !important;
+}
+
+.ns-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 13px;
+  color: var(--ns-faint);
+  line-height: 1.6;
+}
+
+.ns-footer a {
+  color: var(--ns-muted) !important;
+}
+
+.ns-footer a:hover {
+  color: var(--ns-text) !important;
+}
+
+.ns-footer-brand {
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--ns-text);
+  font-size: 15px;
+}
+
+/* About / pages */
+.ns-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0 1.5rem;
+}
+
+.ns-pill {
+  display: inline-block;
+  font-family: "Inter", monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ns-accent);
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.ns-agent {
+  background: var(--ns-surface);
+  border-left: 3px solid var(--ns-accent);
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+  margin: 0.85rem 0;
+}
+
+.ns-agent h3 {
+  margin: 0 0 0.2rem 0 !important;
+  font-size: 1.15rem !important;
+}
+
+.ns-agent .role {
+  font-family: "Inter", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ns-accent);
+  margin-bottom: 0.45rem;
+}
+
+.ns-agent .hw {
+  font-family: "Inter", monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ns-faint);
+  margin-bottom: 0.45rem;
+}
+
+.ns-agent p {
+  margin: 0;
+  color: var(--ns-muted);
+  font-size: 0.95rem;
+}
+
+/* Feed / RSS icon hide if present */
+.feed-subscribe {
+  display: none !important;
+}
+
+/* Selection */
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: var(--ns-text);
+}
+
+/* Mobile nav drawer (minima) */
+@media screen and (max-width: 600px) {
+  .site-nav {
+    background-color: var(--ns-bg-alt);
+    border: 1px solid var(--ns-border);
+    border-radius: 8px;
+  }
+
+  .site-nav input ~ .trigger {
+    background: var(--ns-bg-alt);
+  }
+
+  h1, .post-title, .page-heading {
+    font-size: 1.65rem !important;
+  }
+}
